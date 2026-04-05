@@ -3,63 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZPZIN07 FFH4X</title>
+<title>Meu App</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f2f2f2;
+  background: #0f172a;
+  color: white;
+  text-align: center;
 }
 
 .header {
-  background: linear-gradient(45deg, #6A1B9A, #855DFF);
-  color: white;
+  background: linear-gradient(90deg, #00ffcc, #0077ff);
   padding: 20px;
-  text-align: center;
   font-size: 22px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 30px;
 }
 
 .card {
-  background: white;
-  margin: 15px;
+  background: #1e293b;
   padding: 20px;
+  margin: 20px;
   border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,255,200,0.3);
 }
 
-.center {
-  text-align: center;
-}
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-
-.title {
-  font-size: 20px;
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffcc;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  width: 80%;
   margin-top: 10px;
 }
 
-.link {
-  color: gray;
-  font-size: 14px;
-}
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.btn {
-  background: #eee;
-  padding: 10px 15px;
-  border-radius: 20px;
-  font-size: 14px;
+button:hover {
+  background: #00ccaa;
 }
 </style>
 </head>
@@ -67,38 +54,23 @@ body {
 <body>
 
 <div class="header">
-Detalhes do App
+🚀 MEU APP
 </div>
 
-<div class="card center">
-  <img src="https://via.placeholder.com/80" class="avatar">
-  <div class="title">ZPZIN07 FFH4X</div>
-  <div class="link">https://seusite.github.io/app</div>
+<div class="container">
+
+<div class="card">
+<h2>Função 1</h2>
+<p>Clique no botão abaixo</p>
+<button onclick="alert('Funcionando!')">ATIVAR</button>
 </div>
 
 <div class="card">
-  <h3>Informações do App</h3>
-  <p>📅 Criado: 05 abr. 2026</p>
-  <p>📦 Versão: V: 1</p>
-  <p style="color:red;">Status: Rascunho</p>
+<h2>Função 2</h2>
+<p>Outra função do app</p>
+<button onclick="alert('Outra função ativa!')">USAR</button>
 </div>
 
-<div class="card">
-  <h3>Cores do tema</h3>
-  <p>Primária: #6A1B9A</p>
-  <p>Secundária: #855DFF</p>
-</div>
-
-<div class="card">
-  <h3>Recursos habilitados</h3>
-  <div class="buttons">
-    <div class="btn">Pull To Refresh</div>
-    <div class="btn">Loader</div>
-    <div class="btn">Full Screen</div>
-    <div class="btn">Navigation</div>
-    <div class="btn">External Links</div>
-    <div class="btn">Notification</div>
-  </div>
 </div>
 
 </body>
